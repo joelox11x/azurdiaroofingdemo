@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en" data-lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Azurdia Roofing &amp; Construction LLC — Standing Seam, TPO, Tile &amp; Shingle Roofing | Arlington, TX</title>
+<meta name="description" content="Azurdia Roofing & Construction LLC — standing seam metal roofs, TPO, clay tile and shingle roofing in Arlington, TX. Licensed, insured, BBB accredited. Get a free quote today.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#11161F;
+    --navy:#121A2C;
+    --navy-2:#1A2740;
+    --steel:#3C5C97;
+    --steel-soft:#8298C2;
+    --metal:#98A0AC;
+    --paper:#FAF9F6;
+    --paper-2:#F1EEE7;
+    --copper:#B8763A;
+    --copper-dark:#8F5A28;
+    --copper-light:#D7A268;
+    --line:#E4E0D6;
+    --line-dark:rgba(255,255,255,0.14);
+    --white:#FFFFFF;
+    --ease:cubic-bezier(.16,1,.3,1);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:'Inter',sans-serif;
+    color:var(--ink);
+    background:var(--white);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+    font-size:16px;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces',serif;
+    margin:0;
+    color:var(--navy);
+    font-weight:500;
+    line-height:1.08;
+    letter-spacing:-0.01em;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;text-decoration:none;}
+  button{font-family:inherit;}
+  .container{max-width:1280px;margin:0 auto;padding:0 32px;}
+  @media(max-width:640px){.container{padding:0 22px;}}
+
+  [data-i18n]{display:none;}
+  html[data-lang="en"] [data-i18n="en"]{display:inline;}
+  html[data-lang="es"] [data-i18n="es"]{display:inline;}
+  html[data-lang="en"] [data-i18n="en"].blk{display:block;}
+  html[data-lang="es"] [data-i18n="es"].blk{display:block;}
+  html[data-lang="en"] option[data-i18n="es"]{display:none;}
+  html[data-lang="es"] option[data-i18n="en"]{display:none;}
+
+  ::selection{background:var(--copper);color:#fff;}
+
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{
+    outline:2px solid var(--copper);
+    outline-offset:3px;
+    border-radius:1px;
+  }
+
+  /* Reveal on scroll */
+  .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s var(--ease), transform .8s var(--ease);}
+  .reveal.in{opacity:1;transform:none;}
+  .reveal-stagger > *{opacity:0;transform:translateY(24px);transition:opacity .7s var(--ease), transform .7s var(--ease);}
+  .reveal-stagger.in > *{opacity:1;transform:none;}
+  .reveal-stagger.in > *:nth-child(1){transition-delay:.03s;}
+  .reveal-stagger.in > *:nth-child(2){transition-delay:.11s;}
+  .reveal-stagger.in > *:nth-child(3){transition-delay:.19s;}
+  .reveal-stagger.in > *:nth-child(4){transition-delay:.27s;}
+  .reveal-stagger.in > *:nth-child(5){transition-delay:.35s;}
+  .reveal-stagger.in > *:nth-child(6){transition-delay:.43s;}
+  .reveal-stagger.in > *:nth-child(7){transition-delay:.51s;}
+  .reveal-stagger.in > *:nth-child(8){transition-delay:.59s;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal-stagger > *{opacity:1 !important;transform:none !important;transition:none !important;}
+  }
+
+  /* Header */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:500;
+    background:rgba(18,26,44,0.88);
+    backdrop-filter:blur(10px) saturate(140%);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    transition:padding .35s var(--ease), background .35s var(--ease);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:88px;transition:height .35s var(--ease);}
+  header.scrolled .nav{height:68px;}
+  header.scrolled{background:rgba(15,21,36,0.97);}
+  .brand{display:flex;align-items:center;gap:13px;}
+  .brand img{height:42px;width:auto;transition:height .35s var(--ease);}
+  header.scrolled .brand img{height:34px;}
+  .brand-text{font-family:'Fraunces',serif;color:var(--white);font-weight:600;font-size:16.5px;letter-spacing:0.2px;line-height:1;display:flex;flex-direction:column;}
+  .brand-text .brand-name{display:block;}
+  .brand-text small{display:block;color:var(--metal);font-family:'Inter',sans-serif;font-weight:600;font-size:9.5px;letter-spacing:1.6px;text-transform:uppercase;margin-top:6px;}
+  nav.links{display:flex;align-items:center;gap:8px;}
+  nav.links a{
+    position:relative;color:#D7DBE5;font-size:14.5px;font-weight:500;padding:10px 16px;
+    transition:color .25s var(--ease);
+  }
+  nav.links a::after{
+    content:"";position:absolute;left:16px;right:16px;bottom:5px;height:1px;background:var(--copper-light);
+    transform:scaleX(0);transform-origin:left;transition:transform .35s var(--ease);
+  }
+  nav.links a:hover{color:#fff;}
+  nav.links a:hover::after{transform:scaleX(1);}
+  .nav-right{display:flex;align-items:center;gap:20px;}
+  .lang-toggle{display:flex;border:1px solid rgba(255,255,255,0.22);border-radius:20px;overflow:hidden;}
+  .lang-toggle button{
+    background:transparent;border:none;color:#B9C0CF;padding:7px 14px;font-size:12px;font-weight:700;
+    cursor:pointer;letter-spacing:0.6px;transition:background .3s var(--ease), color .3s var(--ease);
+  }
+  .lang-toggle button.active{background:var(--copper);color:#fff;}
+  .phone-pill{
+    display:flex;align-items:center;gap:9px;background:transparent;color:#fff;
+    padding:9px 18px;border:1px solid var(--copper);border-radius:2px;font-weight:600;font-size:14px;
+    white-space:nowrap;transition:background .3s var(--ease), transform .25s var(--ease), box-shadow .3s var(--ease);
+  }
+  .phone-pill:hover{background:var(--copper);transform:translateY(-2px);box-shadow:0 10px 24px -8px rgba(184,118,58,0.6);}
+  .phone-pill svg{width:15px;height:15px;flex-shrink:0;}
+  .burger{display:none;background:none;border:none;cursor:pointer;padding:8px;}
+  .burger span{display:block;width:23px;height:2px;background:#fff;margin:5px 0;transition:transform .3s,opacity .3s;}
+
+  @media(max-width:980px){nav.links{display:none;}.burger{display:block;}}
+  @media(max-width:640px){.brand-text{display:none;}.phone-pill span.txt{display:none;}.phone-pill{padding:9px 12px;border-radius:50%;}}
+
+  .mobile-menu{
+    display:none;position:fixed;inset:0 0 0 0;background:var(--navy);z-index:600;
+    padding:30px 26px;flex-direction:column;gap:0;overflow-y:auto;
+  }
+  .mobile-menu.open{display:flex;}
+  .mobile-menu .close-row{display:flex;justify-content:flex-end;margin-bottom:20px;}
+  .mobile-menu .close-row button{background:none;border:none;color:#fff;font-size:30px;line-height:1;cursor:pointer;}
+  .mobile-menu a{color:#fff;font-size:22px;font-family:'Fraunces',serif;padding:16px 0;border-bottom:1px solid rgba(255,255,255,.1);}
+
+  /* Corner brackets — blueprint motif */
+  .corner-mark{position:absolute;width:34px;height:34px;pointer-events:none;opacity:.55;}
+  .corner-mark.tl{top:28px;left:28px;border-top:1.5px solid rgba(255,255,255,.6);border-left:1.5px solid rgba(255,255,255,.6);}
+  .corner-mark.tr{top:28px;right:28px;border-top:1.5px solid rgba(255,255,255,.6);border-right:1.5px solid rgba(255,255,255,.6);}
+  .corner-mark.bl{bottom:28px;left:28px;border-bottom:1.5px solid rgba(255,255,255,.6);border-left:1.5px solid rgba(255,255,255,.6);}
+  .corner-mark.br{bottom:28px;right:28px;border-bottom:1.5px solid rgba(255,255,255,.6);border-right:1.5px solid rgba(255,255,255,.6);}
+
+  /* Hero */
+  .hero{
+    position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;
+  }
+  .hero-bg-slider{position:absolute;inset:0;}
+  .hero-bg-slide{
+    position:absolute;inset:0;background-size:cover;background-position:center;background-repeat:no-repeat;
+    transform:scale(1.06);opacity:0;transition:opacity 1.6s var(--ease);
+  }
+  .hero-bg-slide.active{opacity:1;}
+  .hero-scrim{position:absolute;inset:0;background:linear-gradient(190deg, rgba(17,22,34,0.25) 0%, rgba(15,20,33,0.62) 58%, rgba(10,14,23,0.94) 100%);}
+  .hero-inner{position:relative;z-index:2;padding:150px 0 110px;width:100%;text-align:center;display:flex;flex-direction:column;align-items:center;}
+  .eyebrow-tag{display:inline-flex;align-items:center;justify-content:center;gap:10px;color:var(--copper-light);font-weight:600;font-size:13px;letter-spacing:0.3px;margin-bottom:26px;}
+  .eyebrow-tag::before{content:"";width:30px;height:1px;background:var(--copper-light);display:inline-block;}
+  .hero h1{color:#fff;font-size:clamp(38px,6.4vw,74px);font-weight:500;max-width:900px;letter-spacing:-0.015em;margin:0 auto;}
+  .hero p.lead{color:#CBD1DE;font-size:19px;max-width:540px;margin:26px auto 0;font-weight:400;}
+  .hero-ctas{display:flex;gap:18px;margin-top:40px;flex-wrap:wrap;justify-content:center;}
+  .btn{
+    display:inline-flex;align-items:center;gap:10px;padding:16px 30px;font-weight:600;
+    font-size:14.5px;border-radius:2px;border:1px solid transparent;cursor:pointer;
+    font-family:'Inter',sans-serif;letter-spacing:0.1px;transition:transform .3s var(--ease), box-shadow .3s var(--ease), background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+  }
+  .btn-primary{background:var(--copper);color:#fff;}
+  .btn-primary:hover{background:var(--copper-dark);transform:translateY(-3px);box-shadow:0 16px 32px -12px rgba(143,90,40,0.55);}
+  .btn-outline{border-color:rgba(255,255,255,0.5);color:#fff;background:transparent;}
+  .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,0.08);transform:translateY(-3px);}
+  .btn-dark{background:var(--navy);color:#fff;}
+  .btn-dark:hover{background:var(--navy-2);transform:translateY(-3px);box-shadow:0 16px 32px -14px rgba(0,0,0,0.5);}
+
+  .hero-stats{display:flex;gap:0;margin-top:64px;border-top:1px solid rgba(255,255,255,0.16);padding-top:28px;flex-wrap:wrap;justify-content:center;}
+  .hero-stats .stat{padding-right:48px;margin-right:48px;border-right:1px solid rgba(255,255,255,0.16);text-align:center;}
+  .hero-stats .stat:last-child{border-right:none;margin-right:0;padding-right:0;}
+  @media(max-width:640px){
+    .hero-stats{flex-direction:column;align-items:center;gap:18px;padding-top:24px;}
+    .hero-stats .stat{border-right:none;margin-right:0;padding-right:0;padding-bottom:18px;border-bottom:1px solid rgba(255,255,255,0.16);width:100%;max-width:260px;}
+    .hero-stats .stat:last-child{border-bottom:none;padding-bottom:0;}
+  }
+  .hero-stats .num{color:#fff;font-family:'Fraunces',serif;font-size:28px;font-weight:500;}
+  .hero-stats .lbl{color:#9BA3B4;font-size:12.5px;margin-top:3px;}
+
+  /* Trust bar */
+  .trustbar{background:var(--paper);padding:28px 0;border-bottom:1px solid var(--line);}
+  .trust-row{display:flex;flex-wrap:wrap;gap:38px;align-items:center;justify-content:center;}
+  .trust-item{display:flex;align-items:center;gap:11px;color:var(--ink);font-size:13.5px;font-weight:600;opacity:.85;}
+  .trust-item svg{width:19px;height:19px;color:var(--copper);flex-shrink:0;}
+
+  section{padding:120px 0;}
+  @media(max-width:900px){section{padding:84px 0;}}
+  @media(max-width:640px){section{padding:64px 0;}}
+  .section-head{max-width:640px;margin-bottom:60px;}
+  .section-head.center{margin-left:auto;margin-right:auto;text-align:center;}
+  .kicker{color:var(--copper);font-weight:600;font-size:13px;letter-spacing:0.3px;margin-bottom:14px;display:block;}
+  .section-head h2{font-size:clamp(30px,4.2vw,46px);}
+  .section-head p{color:#5B6272;font-size:17px;margin-top:18px;max-width:520px;}
+  .section-head.center p{margin-left:auto;margin-right:auto;}
+
+  /* Services overview */
+  .services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;}
+  .service-card{
+    background:#fff;padding:0;display:flex;flex-direction:column;gap:0;border:1px solid var(--line);
+    transition:transform .4s var(--ease), box-shadow .4s var(--ease), border-color .4s var(--ease);
+    position:relative;overflow:hidden;
+  }
+  .service-card .sc-top{height:3px;background:var(--copper);transform:scaleX(0);transform-origin:left;transition:transform .4s var(--ease);}
+  .service-card:hover .sc-top{transform:scaleX(1);}
+  .service-card:hover{transform:translateY(-8px);box-shadow:0 28px 44px -20px rgba(18,26,44,0.22);border-color:transparent;}
+  .service-card .sc-media{width:100%;height:190px;overflow:hidden;}
+  .service-card .sc-media img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+  .service-card:hover .sc-media img{transform:scale(1.08);}
+  .service-card .sc-body{padding:26px 30px 32px;display:flex;flex-direction:column;gap:16px;flex-grow:1;}
+  .service-card h3{font-size:20px;}
+  .service-card p{color:#666D7C;font-size:14.5px;margin:0;flex-grow:1;}
+  a.svc-link{font-weight:600;font-size:13.5px;color:var(--navy);display:inline-flex;align-items:center;gap:8px;border-bottom:1.5px solid transparent;padding-bottom:2px;transition:border-color .3s var(--ease), color .3s var(--ease);}
+  .service-card:hover a.svc-link{color:var(--copper);border-color:var(--copper);}
+  @media(max-width:980px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+  @media(max-width:560px){.services-grid{grid-template-columns:1fr;}}
+
+  /* Category sections — layered editorial composition */
+  .cat-section{background:var(--paper);}
+  .cat-section.alt{background:#fff;}
+  .cat-block{display:grid;grid-template-columns:1fr 1fr;gap:86px;align-items:center;}
+  .cat-block.reverse .cat-copy{order:2;}
+  .cat-block.reverse .cat-media-wrap{order:1;}
+  .cat-num{font-family:'Fraunces',serif;color:var(--copper);font-size:14px;font-weight:600;letter-spacing:0.3px;margin-bottom:16px;font-style:italic;}
+  .cat-copy h2{font-size:clamp(28px,3.4vw,42px);margin-bottom:20px;color:var(--navy);}
+  .cat-copy p.cat-desc{color:#5B6272;font-size:16.5px;max-width:460px;}
+  .cat-list{list-style:none;padding:0;margin:28px 0 34px;display:flex;flex-direction:column;}
+  .cat-list li{padding:14px 0;border-bottom:1px solid var(--line);color:#3E4557;font-size:14.5px;display:flex;gap:12px;align-items:center;}
+  .cat-list li:first-child{border-top:1px solid var(--line);}
+  .cat-list li svg{width:15px;height:15px;color:var(--copper);flex-shrink:0;}
+
+  .cat-media-wrap{position:relative;}
+  .cat-media{position:relative;height:420px;}
+  .media-main{
+    position:absolute;top:0;left:0;width:80%;height:88%;overflow:hidden;
+    box-shadow:0 34px 60px -20px rgba(18,26,44,0.35);
+  }
+  .media-accent{
+    position:absolute;bottom:0;right:0;width:46%;height:52%;overflow:hidden;
+    box-shadow:0 24px 44px -16px rgba(18,26,44,0.4);border:7px solid var(--paper);
+  }
+  .cat-section.alt .media-accent{border-color:#fff;}
+  .cat-block.reverse .media-main{left:auto;right:0;}
+  .cat-block.reverse .media-accent{right:auto;left:0;}
+  .media-main img, .media-accent img{width:100%;height:100%;object-fit:cover;transition:transform .7s var(--ease);}
+  .cat-media:hover .media-main img{transform:scale(1.05);}
+  .cat-media:hover .media-accent img{transform:scale(1.08);}
+
+  .thumb-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:8px;}
+  .thumb-row a{display:block;aspect-ratio:1/1;overflow:hidden;position:relative;}
+  .thumb-row img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease), filter .4s var(--ease);filter:grayscale(15%);}
+  .thumb-row a:hover img{transform:scale(1.1);filter:grayscale(0%);}
+
+  @media(max-width:900px){
+    .cat-block, .cat-block.reverse{grid-template-columns:1fr;gap:44px;}
+    .cat-block.reverse .cat-copy{order:1;}
+    .cat-block.reverse .cat-media-wrap{order:2;}
+    .cat-media{height:320px;}
+  }
+
+  /* Process */
+  .process-wrap{background:var(--navy);color:#fff;position:relative;overflow:hidden;}
+  .process-wrap .section-head p{color:#9BA3B4;}
+  .process-wrap .kicker{color:var(--copper-light);}
+  .process-wrap .section-head h2{color:#fff;}
+  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .process-step{padding:34px 28px;border:1px solid var(--line-dark);position:relative;transition:transform .35s var(--ease), border-color .35s var(--ease);}
+  .process-step:hover{transform:translateY(-6px);border-color:rgba(255,255,255,0.32);}
+  .process-step .pnum{font-family:'Fraunces',serif;font-size:40px;color:rgba(255,255,255,0.2);font-weight:500;font-style:italic;}
+  .process-step h4{color:#fff;font-size:18px;margin:16px 0 10px;font-weight:500;}
+  .process-step p{color:#9BA3B4;font-size:14px;margin:0;}
+  @media(max-width:860px){.process-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:560px){.process-grid{grid-template-columns:1fr;}}
+
+  /* Gallery: strict 4x2 */
+  .gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:repeat(2,1fr);gap:16px;}
+  .gallery-grid figure{margin:0;position:relative;overflow:hidden;aspect-ratio:4/5;}
+  .gallery-grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease);}
+  .gallery-grid figure::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(0deg, rgba(18,26,44,0.72) 0%, rgba(18,26,44,0) 46%);
+    opacity:0;transition:opacity .4s var(--ease);
+  }
+  .gallery-grid figcaption{
+    position:absolute;left:18px;right:18px;bottom:16px;color:#fff;font-size:13px;font-weight:600;
+    opacity:0;transform:translateY(8px);transition:opacity .4s var(--ease), transform .4s var(--ease);
+    display:flex;align-items:center;gap:8px;
+  }
+  .gallery-grid figcaption svg{width:14px;height:14px;color:var(--copper-light);}
+  .gallery-grid figure:hover img{transform:scale(1.08);}
+  .gallery-grid figure:hover::after{opacity:1;}
+  .gallery-grid figure:hover figcaption{opacity:1;transform:translateY(0);}
+  @media(max-width:900px){.gallery-grid{grid-template-columns:repeat(2,1fr);grid-template-rows:repeat(4,1fr);}}
+
+  /* Why us */
+  .whyus{background:#fff;}
+  .why-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:80px;align-items:center;}
+  .why-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;}
+  .why-list li{display:flex;gap:20px;padding:24px 0;border-top:1px solid var(--line);}
+  .why-list li:last-child{border-bottom:1px solid var(--line);}
+  .why-num{font-family:'Fraunces',serif;font-style:italic;font-size:20px;color:var(--copper);width:40px;flex-shrink:0;}
+  .why-list h4{font-size:18px;margin-bottom:8px;font-weight:500;}
+  .why-list p{margin:0;color:#5B6272;font-size:14.5px;}
+  .why-media{position:relative;}
+  .why-media img{width:100%;height:560px;object-fit:cover;box-shadow:0 40px 70px -24px rgba(18,26,44,0.3);}
+  .badge-float{
+    position:absolute;bottom:-28px;left:-28px;background:#fff;padding:24px 28px;box-shadow:0 20px 50px rgba(18,26,44,0.22);
+    display:flex;align-items:center;gap:18px;max-width:290px;border-top:3px solid var(--copper);
+  }
+  .badge-float svg{width:36px;height:36px;color:var(--copper);flex-shrink:0;}
+  .badge-float strong{display:block;font-family:'Fraunces',serif;color:var(--navy);font-size:16px;font-weight:600;}
+  .badge-float span{color:#5B6272;font-size:12.5px;}
+  @media(max-width:900px){.why-grid{grid-template-columns:1fr;gap:56px;}.why-media{order:-1;}.badge-float{position:static;margin-top:20px;max-width:none;}}
+
+  /* CTA band */
+  .cta-band{background:var(--navy);color:#fff;padding:76px 0;position:relative;overflow:hidden;}
+  .cta-row{display:flex;align-items:center;justify-content:space-between;gap:34px;flex-wrap:wrap;position:relative;z-index:1;}
+  .cta-row h2{color:#fff;font-size:clamp(26px,3.2vw,36px);max-width:600px;}
+  .cta-row p{color:#9BA3B4;margin-top:12px;font-size:16px;}
+
+  /* Contact */
+  .contact-wrap{display:grid;grid-template-columns:0.95fr 1.05fr;gap:60px;align-items:center;padding:110px 0;}
+  .contact-info{padding:0;background:transparent;color:#fff;position:relative;}
+  .contact-info h2{color:#fff;font-size:clamp(28px,3.2vw,38px);margin-bottom:18px;}
+  .contact-info > p{color:#9BA3B4;max-width:420px;font-size:16px;}
+  .info-list{list-style:none;padding:0;margin:40px 0;display:flex;flex-direction:column;gap:24px;}
+  .info-list li{display:flex;gap:18px;align-items:flex-start;}
+  .info-list svg{width:20px;height:20px;color:var(--copper-light);flex-shrink:0;margin-top:3px;}
+  .info-list strong{display:block;font-size:15px;font-weight:600;}
+  .info-list span{color:#9BA3B4;font-size:14px;}
+  .social-row{display:flex;gap:12px;margin-top:8px;}
+  .social-row a{width:42px;height:42px;border:1px solid rgba(255,255,255,0.22);display:flex;align-items:center;justify-content:center;border-radius:50%;transition:background .3s var(--ease), border-color .3s var(--ease), transform .3s var(--ease);}
+  .social-row a:hover{background:var(--copper);border-color:var(--copper);transform:translateY(-3px);}
+  .social-row svg{width:18px;height:18px;}
+
+  .contact-form{
+    background:var(--paper);padding:56px 48px;border-radius:6px;
+    box-shadow:0 50px 90px -30px rgba(0,0,0,0.55);
+    border-top:3px solid var(--copper);
+  }
+  .contact-form h3{font-size:24px;margin-bottom:10px;font-weight:500;}
+  .contact-form > p{color:#5B6272;margin-bottom:34px;font-size:14.5px;}
+  .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+  .field{margin-bottom:20px;}
+  .field label{display:block;font-size:12.5px;font-weight:600;color:var(--navy);margin-bottom:9px;letter-spacing:0.2px;}
+  .field input, .field select, .field textarea{
+    width:100%;border:none;border-bottom:1.5px solid var(--line);background:transparent;padding:12px 2px;
+    font-family:'Inter',sans-serif;font-size:15px;color:var(--ink);border-radius:0;
+    transition:border-color .3s var(--ease);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{outline:none;border-color:var(--copper);}
+  .field textarea{resize:vertical;min-height:100px;}
+  .field select{
+    appearance:none;-webkit-appearance:none;-moz-appearance:none;
+    padding-right:26px;cursor:pointer;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%233C5C97' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat:no-repeat;background-position:right 2px center;background-size:14px;
+  }
+  .submit-row{display:flex;align-items:center;gap:20px;margin-top:12px;flex-wrap:wrap;}
+  .form-note{color:#8891A0;font-size:13px;}
+  @media(max-width:900px){.contact-wrap{grid-template-columns:1fr;gap:44px;padding:70px 0;}.contact-form{padding:40px 26px;}.form-row{grid-template-columns:1fr;}}
+
+  /* Footer */
+  footer{background:#0C111C;color:#7A8298;padding:64px 0 30px;}
+  .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:44px;}
+  .foot-brand img{height:40px;margin-bottom:18px;}
+  .foot-brand p{font-size:13.5px;max-width:280px;color:#6C7488;}
+  .foot-col h5{color:#fff;font-family:'Fraunces',serif;font-size:15px;font-weight:600;margin-bottom:18px;}
+  .foot-col ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:11px;}
+  .foot-col a{font-size:13.5px;color:#8891A6;transition:color .25s var(--ease);}
+  .foot-col a:hover{color:#fff;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.08);margin-top:48px;padding-top:24px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:#5C6478;}
+  @media(max-width:800px){.foot-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:480px){.foot-grid{grid-template-columns:1fr;}}
+
+  .sticky-call{
+    position:fixed;bottom:0;left:0;right:0;background:var(--copper);z-index:400;display:none;
+    padding:15px 20px;align-items:center;justify-content:center;gap:10px;box-shadow:0 -8px 24px rgba(0,0,0,0.2);
+  }
+  .sticky-call a{color:#fff;font-family:'Inter',sans-serif;font-weight:700;font-size:15px;display:flex;gap:10px;align-items:center;}
+  .sticky-call svg{width:17px;height:17px;}
+  @media(max-width:640px){.sticky-call{display:flex;}body{padding-bottom:60px;}}
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.52-PM-1.jpeg" alt="Azurdia Roofing & Construction LLC logo">
+      <span class="brand-text"><span class="brand-name">Azurdia</span><small data-i18n="en">Roofing &amp; Construction</small><small data-i18n="es">Techos y Construcción</small></span>
+    </a>
+    <nav class="links">
+      <a href="#services" data-i18n="en">Services</a><a href="#services" data-i18n="es">Servicios</a>
+      <a href="#gallery" data-i18n="en">Gallery</a><a href="#gallery" data-i18n="es">Galería</a>
+      <a href="#why" data-i18n="en">Why Us</a><a href="#why" data-i18n="es">Nosotros</a>
+      <a href="#contact" data-i18n="en">Contact</a><a href="#contact" data-i18n="es">Contacto</a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-toggle">
+        <button id="btn-en" class="active" onclick="setLang('en')">EN</button>
+        <button id="btn-es" onclick="setLang('es')">ES</button>
+      </div>
+      <a class="phone-pill" href="tel:+18176375804">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span class="txt">817-637-5804</span>
+      </a>
+      <button class="burger" onclick="toggleMenu()" aria-label="Open menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="close-row"><button onclick="toggleMenu()" aria-label="Close menu">&times;</button></div>
+  <a href="#services" onclick="toggleMenu()" data-i18n="en">Services</a><a href="#services" onclick="toggleMenu()" data-i18n="es">Servicios</a>
+  <a href="#gallery" onclick="toggleMenu()" data-i18n="en">Gallery</a><a href="#gallery" onclick="toggleMenu()" data-i18n="es">Galería</a>
+  <a href="#why" onclick="toggleMenu()" data-i18n="en">Why Us</a><a href="#why" onclick="toggleMenu()" data-i18n="es">Nosotros</a>
+  <a href="#contact" onclick="toggleMenu()" data-i18n="en">Contact</a><a href="#contact" onclick="toggleMenu()" data-i18n="es">Contacto</a>
+</div>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="hero-bg-slider" id="heroBgSlider">
+      <div class="hero-bg-slide active" style="background-image:url('http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM.jpeg')"></div>
+      <div class="hero-bg-slide" style="background-image:url('http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-7.jpeg')"></div>
+    </div>
+    <div class="hero-scrim"></div>
+    <span class="corner-mark tl"></span><span class="corner-mark tr"></span>
+    <span class="corner-mark bl"></span><span class="corner-mark br"></span>
+    <div class="container hero-inner">
+      <span class="eyebrow-tag reveal">
+        <span data-i18n="en">Arlington, TX &amp; the DFW metroplex</span>
+        <span data-i18n="es">Arlington, TX y el área metropolitana de DFW</span>
+      </span>
+      <h1 class="reveal">
+        <span data-i18n="en">Roofs built to take on North Texas weather — done right the first time.</span>
+        <span data-i18n="es">Techos hechos para resistir el clima de North Texas — bien hechos desde el primer día.</span>
+      </h1>
+      <p class="lead reveal">
+        <span data-i18n="en">Standing seam metal, TPO, clay tile and shingle roofing — repairs, replacements and full remodels from a licensed, insured, BBB-accredited crew.</span>
+        <span data-i18n="es">Metal de junta alzada, TPO, teja de barro y shingles — reparaciones, techos nuevos y remodelaciones completas, con licencia, aseguranza y acreditación BBB.</span>
+      </p>
+      <div class="hero-ctas reveal">
+        <a href="#contact" class="btn btn-primary"><span data-i18n="en">Get a free quote</span><span data-i18n="es">Pide tu cotización gratis</span></a>
+        <a href="tel:+18176375804" class="btn btn-outline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          817-637-5804
+        </a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><div class="num">4</div><div class="lbl"><span data-i18n="en">Roofing systems installed</span><span data-i18n="es">Sistemas de techado instalados</span></div></div>
+        <div class="stat"><div class="num">100%</div><div class="lbl"><span data-i18n="en">Licensed &amp; insured</span><span data-i18n="es">Con licencia y aseguranza</span></div></div>
+        <div class="stat"><div class="num">BBB</div><div class="lbl"><span data-i18n="en">Accredited business</span><span data-i18n="es">Empresa acreditada</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="trustbar">
+    <div class="container trust-row">
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span data-i18n="en">Licensed &amp; fully insured</span><span data-i18n="es">Con licencia y aseguranza completa</span></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg><span data-i18n="en">BBB accredited</span><span data-i18n="es">Acreditados por el BBB</span></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 7h-9M14 17H5"/><circle cx="17" cy="17" r="3"/><circle cx="7" cy="7" r="3"/></svg><span data-i18n="en">Any size job, same priority</span><span data-i18n="es">Cualquier tamaño de trabajo, misma prioridad</span></div>
+      <div class="trust-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/></svg><span data-i18n="en">Free, no-obligation estimates</span><span data-i18n="es">Estimados gratis sin compromiso</span></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker" data-i18n="en">What we do</span><span class="kicker" data-i18n="es">Lo que hacemos</span>
+        <h2><span data-i18n="en">Roofing &amp; construction services</span><span data-i18n="es">Servicios de techado y construcción</span></h2>
+        <p><span data-i18n="en">From repairs to full remodels, we work with every major roofing system on the market — matched to your building, your budget and North Texas weather.</span><span data-i18n="es">Desde reparaciones hasta remodelaciones completas, trabajamos con todos los sistemas de techado principales — según tu propiedad, tu presupuesto y el clima de North Texas.</span></p>
+      </div>
+      <div class="services-grid reveal-stagger">
+        <a href="#standing-seam" class="service-card"><span class="sc-top"></span>
+          <div class="sc-media"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-4.jpeg" alt="Standing seam metal roofing"></div>
+          <div class="sc-body">
+          <h3 data-i18n="en" class="blk">Standing Seam Metal</h3><h3 data-i18n="es" class="blk">Techo de Metal Junta Alzada</h3>
+          <p data-i18n="en" class="blk">Interlocking metal panels for a clean, modern line and decades of weather resistance.</p>
+          <p data-i18n="es" class="blk">Paneles metálicos entrelazados, línea limpia y moderna, y resistencia por décadas.</p>
+          <span class="svc-link"><span data-i18n="en">Learn more</span><span data-i18n="es">Ver más</span></span>
+        </div></a>
+        <a href="#tpo" class="service-card"><span class="sc-top"></span>
+          <div class="sc-media"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-2.jpeg" alt="TPO roofing membrane"></div>
+          <div class="sc-body">
+          <h3 data-i18n="en" class="blk">TPO Roofing</h3><h3 data-i18n="es" class="blk">Techo TPO</h3>
+          <p data-i18n="en" class="blk">Seamless, reflective single-ply membrane built for flat and low-slope commercial roofs.</p>
+          <p data-i18n="es" class="blk">Membrana de una sola capa, reflectiva y sin uniones, ideal para techos planos y comerciales.</p>
+          <span class="svc-link"><span data-i18n="en">Learn more</span><span data-i18n="es">Ver más</span></span>
+        </div></a>
+        <a href="#tile" class="service-card"><span class="sc-top"></span>
+          <div class="sc-media"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM.jpeg" alt="Clay tile roofing"></div>
+          <div class="sc-body">
+          <h3 data-i18n="en" class="blk">Clay Tile &amp; Roof Tiles</h3><h3 data-i18n="es" class="blk">Teja de Barro y Teja</h3>
+          <p data-i18n="en" class="blk">Classic Spanish and concrete tile roofing, installed and repaired the right way.</p>
+          <p data-i18n="es" class="blk">Teja española y de concreto clásica, instalada y reparada de la manera correcta.</p>
+          <span class="svc-link"><span data-i18n="en">Learn more</span><span data-i18n="es">Ver más</span></span>
+        </div></a>
+        <a href="#shingles" class="service-card"><span class="sc-top"></span>
+          <div class="sc-media"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-6.jpeg" alt="Shingle roofing"></div>
+          <div class="sc-body">
+          <h3 data-i18n="en" class="blk">Shingle Roofing</h3><h3 data-i18n="es" class="blk">Techo de Shingles</h3>
+          <p data-i18n="en" class="blk">Architectural and 3-tab asphalt shingles — the most trusted choice for homes.</p>
+          <p data-i18n="es" class="blk">Shingles de asfalto arquitectónicos y de 3 pestañas — la opción más confiable para casas.</p>
+          <span class="svc-link"><span data-i18n="en">Learn more</span><span data-i18n="es">Ver más</span></span>
+        </div></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-section" id="tile">
+    <div class="container">
+      <div class="cat-block">
+        <div class="cat-copy reveal">
+          <span class="cat-num">01 — <span data-i18n="en">Tile Roofing</span><span data-i18n="es">Techo de Teja</span></span>
+          <h2><span data-i18n="en">Clay Tile &amp; Roof Tiles</span><span data-i18n="es">Teja de Barro y Teja</span></h2>
+          <p class="cat-desc"><span data-i18n="en">We're experts in tile roofing — from classic clay barrel tiles to concrete profiles. Precise underlayment, flashing and fastening keep every tile locked in place through wind and storms.</span><span data-i18n="es">Somos expertos en techos de teja — desde la clásica teja de barro tipo barril hasta perfiles de concreto. Instalación precisa de base, tapajuntas y fijación para que cada teja resista viento y tormentas.</span></p>
+          <ul class="cat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">New tile roof installation</span><span data-i18n="es">Instalación de techo de teja nuevo</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Broken &amp; cracked tile repair</span><span data-i18n="es">Reparación de teja rota o agrietada</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Underlayment &amp; flashing upgrades</span><span data-i18n="es">Mejora de base y tapajuntas</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-dark"><span data-i18n="en">Contact us for a quote</span><span data-i18n="es">Contáctanos para tu cotización</span></a>
+        </div>
+        <div class="cat-media-wrap reveal">
+          <div class="cat-media">
+            <div class="media-main"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM.jpeg" alt="Clay tile roof project by Azurdia Roofing"></div>
+            <div class="media-accent"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-1.jpeg" alt="Roof tile installation detail"></div>
+          </div>
+          <div class="thumb-row">
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM.jpeg" alt="Tile roof photo 1"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-1.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-1.jpeg" alt="Tile roof photo 2"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-2.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-2.jpeg" alt="Tile roof photo 3"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-3.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-3.jpeg" alt="Tile roof photo 4"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-section alt" id="standing-seam">
+    <div class="container">
+      <div class="cat-block reverse">
+        <div class="cat-copy reveal">
+          <span class="cat-num">02 — <span data-i18n="en">Metal Roofing</span><span data-i18n="es">Techo de Metal</span></span>
+          <h2><span data-i18n="en">Standing Seam Roof Panels</span><span data-i18n="es">Techo de Metal Junta Alzada</span></h2>
+          <p class="cat-desc"><span data-i18n="en">Standing seam is our specialty. Concealed fasteners and raised interlocking seams give you a sharp, modern roofline with outstanding durability against wind, hail and Texas heat.</span><span data-i18n="es">El junta alzada es nuestra especialidad. Fijaciones ocultas y juntas elevadas entrelazadas dan un techo moderno y elegante, con excelente durabilidad contra viento, granizo y el calor de Texas.</span></p>
+          <ul class="cat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Residential &amp; commercial panels</span><span data-i18n="es">Paneles residenciales y comerciales</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Concealed-fastener systems</span><span data-i18n="es">Sistemas de fijación oculta</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Custom colors &amp; profiles</span><span data-i18n="es">Colores y perfiles personalizados</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-dark"><span data-i18n="en">Contact us for a quote</span><span data-i18n="es">Contáctanos para tu cotización</span></a>
+        </div>
+        <div class="cat-media-wrap reveal">
+          <div class="cat-media">
+            <div class="media-main"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-4.jpeg" alt="Standing seam metal roof panels"></div>
+            <div class="media-accent"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-5.jpeg" alt="Metal roof installation detail"></div>
+          </div>
+          <div class="thumb-row">
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-4.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-4.jpeg" alt="Standing seam photo 1"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-5.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.53-PM-5.jpeg" alt="Standing seam photo 2"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM.jpeg" alt="Standing seam photo 3"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-1.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-1.jpeg" alt="Standing seam photo 4"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-section" id="tpo">
+    <div class="container">
+      <div class="cat-block">
+        <div class="cat-copy reveal">
+          <span class="cat-num">03 — <span data-i18n="en">Flat Roofing</span><span data-i18n="es">Techo Plano</span></span>
+          <h2><span data-i18n="en">TPO Roofing</span><span data-i18n="es">Techo TPO</span></h2>
+          <p class="cat-desc"><span data-i18n="en">Our TPO systems are heat-welded seam to seam for a watertight, energy-reflective surface — the go-to solution for flat and low-slope roofs on commercial and residential additions.</span><span data-i18n="es">Nuestros sistemas TPO se sueldan con calor junta a junta para una superficie hermética y reflectiva — la solución ideal para techos planos o de poca pendiente, comerciales o residenciales.</span></p>
+          <ul class="cat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Heat-welded, watertight seams</span><span data-i18n="es">Juntas selladas con calor, herméticas</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Energy-efficient reflective surface</span><span data-i18n="es">Superficie reflectiva de bajo consumo</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">New installs &amp; recover jobs</span><span data-i18n="es">Instalación nueva y encimados</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-dark"><span data-i18n="en">Contact us for a quote</span><span data-i18n="es">Contáctanos para tu cotización</span></a>
+        </div>
+        <div class="cat-media-wrap reveal">
+          <div class="cat-media">
+            <div class="media-main"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-2.jpeg" alt="TPO roofing membrane installation"></div>
+            <div class="media-accent"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-3.jpeg" alt="TPO flat roof detail"></div>
+          </div>
+          <div class="thumb-row">
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-2.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-2.jpeg" alt="TPO photo 1"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-3.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-3.jpeg" alt="TPO photo 2"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-4.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-4.jpeg" alt="TPO photo 3"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-5.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-5.jpeg" alt="TPO photo 4"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cat-section alt" id="shingles">
+    <div class="container">
+      <div class="cat-block reverse">
+        <div class="cat-copy reveal">
+          <span class="cat-num">04 — <span data-i18n="en">Residential Roofing</span><span data-i18n="es">Techo Residencial</span></span>
+          <h2><span data-i18n="en">Shingle Roofing</span><span data-i18n="es">Techo de Shingles</span></h2>
+          <p class="cat-desc"><span data-i18n="en">We are experts in shingle roofing. From storm-damage repairs to a full tear-off and replacement, we install architectural and 3-tab shingles built to hold up against Texas hail and wind.</span><span data-i18n="es">Somos expertos en techos de shingles. Desde reparaciones por tormenta hasta el reemplazo completo, instalamos shingles arquitectónicos y de 3 pestañas hechos para resistir el granizo y el viento de Texas.</span></p>
+          <ul class="cat-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Storm &amp; hail damage repair</span><span data-i18n="es">Reparación por tormenta y granizo</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Full tear-off &amp; replacement</span><span data-i18n="es">Reemplazo completo del techo</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span data-i18n="en">Insurance claim assistance</span><span data-i18n="es">Asistencia con reclamos de seguro</span></li>
+          </ul>
+          <a href="#contact" class="btn btn-dark"><span data-i18n="en">Reach us at 817-637-5804</span><span data-i18n="es">Contáctanos al 817-637-5804</span></a>
+        </div>
+        <div class="cat-media-wrap reveal">
+          <div class="cat-media">
+            <div class="media-main"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-6.jpeg" alt="Shingle roof installation"></div>
+            <div class="media-accent"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.55-PM-1.jpeg" alt="Asphalt shingle roof detail"></div>
+          </div>
+          <div class="thumb-row">
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-6.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.54-PM-6.jpeg" alt="Shingle roof photo 1"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.55-PM-1.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.55-PM-1.jpeg" alt="Shingle roof photo 2"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.55-PM-2.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.55-PM-2.jpeg" alt="Shingle roof photo 3"></a>
+            <a href="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.55-PM-3.jpeg" target="_blank" rel="noopener"><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.55-PM-3.jpeg" alt="Shingle roof photo 4"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="process-wrap">
+    <div class="container" style="padding:120px 32px;">
+      <div class="section-head reveal">
+        <span class="kicker" data-i18n="en">How it works</span><span class="kicker" data-i18n="es">Cómo trabajamos</span>
+        <h2><span data-i18n="en">From first call to final walkthrough</span><span data-i18n="es">Desde la primera llamada hasta la entrega final</span></h2>
+      </div>
+      <div class="process-grid reveal-stagger">
+        <div class="process-step"><div class="pnum">01</div><h4><span data-i18n="en">Free inspection</span><span data-i18n="es">Inspección gratis</span></h4><p><span data-i18n="en">We walk the roof, document the damage or condition, and answer every question on-site.</span><span data-i18n="es">Revisamos el techo, documentamos el daño o su condición, y respondemos tus preguntas en el lugar.</span></p></div>
+        <div class="process-step"><div class="pnum">02</div><h4><span data-i18n="en">Detailed quote</span><span data-i18n="es">Cotización detallada</span></h4><p><span data-i18n="en">A written estimate with materials, timeline and cost — no surprises later.</span><span data-i18n="es">Un estimado por escrito con materiales, tiempo y costo — sin sorpresas después.</span></p></div>
+        <div class="process-step"><div class="pnum">03</div><h4><span data-i18n="en">Professional install</span><span data-i18n="es">Instalación profesional</span></h4><p><span data-i18n="en">Our crew protects your property, works efficiently, and keeps you updated daily.</span><span data-i18n="es">Nuestro equipo protege tu propiedad, trabaja con eficiencia y te mantiene informado cada día.</span></p></div>
+        <div class="process-step"><div class="pnum">04</div><h4><span data-i18n="en">Final walkthrough</span><span data-i18n="es">Revisión final</span></h4><p><span data-i18n="en">We inspect the finished roof together and clean the site before we leave.</span><span data-i18n="es">Inspeccionamos el techo terminado juntos y limpiamos el área antes de irnos.</span></p></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker" data-i18n="en">Our work</span><span class="kicker" data-i18n="es">Nuestro trabajo</span>
+        <h2><span data-i18n="en">Project gallery</span><span data-i18n="es">Galería de proyectos</span></h2>
+        <p><span data-i18n="en">A look at recent roofs completed across the Arlington and DFW area.</span><span data-i18n="es">Un vistazo a techos recientes terminados en Arlington y el área de DFW.</span></p>
+      </div>
+      <div class="gallery-grid reveal-stagger">
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.39-PM-1.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-1.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-2.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-3.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-4.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-6.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+        <figure><img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-7.jpeg" alt="Azurdia Roofing project"><figcaption><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21h16M4 21V10l8-6 8 6v11"/></svg>Azurdia Roofing</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="whyus" id="why">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-media reveal">
+          <img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.51.40-PM-8.jpeg" alt="Azurdia Roofing crew at work">
+          <div class="badge-float">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="6"/><path d="M9 14l-2 7 5-3 5 3-2-7"/></svg>
+            <div><strong data-i18n="en">BBB Accredited</strong><strong data-i18n="es">Acreditados BBB</strong><span data-i18n="en">Licensed &amp; insured business</span><span data-i18n="es">Empresa con licencia y aseguranza</span></div>
+          </div>
+        </div>
+        <div class="reveal">
+          <span class="kicker" data-i18n="en">Why choose Azurdia</span><span class="kicker" data-i18n="es">Por qué elegir a Azurdia</span>
+          <h2 style="margin-bottom:8px;"><span data-i18n="en">Every job gets our full attention</span><span data-i18n="es">Cada trabajo recibe toda nuestra atención</span></h2>
+          <ul class="why-list">
+            <li><div class="why-num">01</div><div><h4><span data-i18n="en">Insured &amp; BBB accredited</span><span data-i18n="es">Asegurados y acreditados BBB</span></h4><p><span data-i18n="en">Your property and our crew are protected on every project, big or small.</span><span data-i18n="es">Tu propiedad y nuestro equipo están protegidos en cada proyecto, grande o pequeño.</span></p></div></li>
+            <li><div class="why-num">02</div><div><h4><span data-i18n="en">No job too big or small</span><span data-i18n="es">Ningún trabajo es demasiado grande o pequeño</span></h4><p><span data-i18n="en">A single repair gets the same care and priority as a full commercial roof.</span><span data-i18n="es">Una simple reparación recibe el mismo cuidado y prioridad que un techo comercial completo.</span></p></div></li>
+            <li><div class="why-num">03</div><div><h4><span data-i18n="en">Repairs, replacements &amp; remodels</span><span data-i18n="es">Reparaciones, techos nuevos y remodelaciones</span></h4><p><span data-i18n="en">One team for any type of roofing remodel — plus general construction work.</span><span data-i18n="es">Un solo equipo para cualquier tipo de remodelación de techo — y trabajos de construcción en general.</span></p></div></li>
+            <li><div class="why-num">04</div><div><h4><span data-i18n="en">Bilingual, local &amp; responsive</span><span data-i18n="es">Bilingües, locales y de respuesta rápida</span></h4><p><span data-i18n="en">We serve Arlington and DFW in English and Spanish, with the best possible service.</span><span data-i18n="es">Servimos Arlington y DFW en inglés y español, con el mejor servicio posible.</span></p></div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-band">
+    <div class="container cta-row reveal">
+      <div>
+        <h2><span data-i18n="en">Thank you for continuing to trust us with your roof.</span><span data-i18n="es">Gracias por seguir confiando en nosotros con tu techo.</span></h2>
+        <p><span data-i18n="en">Tell us about your project and we'll get back to you fast.</span><span data-i18n="es">Cuéntanos sobre tu proyecto y te responderemos rápido.</span></p>
+      </div>
+      <a href="tel:+18176375804" class="btn btn-primary"><span data-i18n="en">Call 817-637-5804</span><span data-i18n="es">Llama al 817-637-5804</span></a>
+    </div>
+  </div>
+
+  <section id="contact" style="padding:0;background:var(--navy);">
+    <div class="container contact-wrap">
+      <div class="contact-info reveal">
+        <span class="kicker" style="color:var(--copper-light);" data-i18n="en">Get in touch</span><span class="kicker" style="color:var(--copper-light);" data-i18n="es">Contáctanos</span>
+        <h2><span data-i18n="en">Let's talk about your roof</span><span data-i18n="es">Hablemos de tu techo</span></h2>
+        <p><span data-i18n="en">Reach out for a free, no-obligation quote. No job is too big or too small.</span><span data-i18n="es">Escríbenos para tu cotización gratis, sin compromiso. Ningún trabajo es demasiado grande ni pequeño.</span></p>
+        <ul class="info-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><strong data-i18n="en">Call or text</strong><strong data-i18n="es">Llama o envía un mensaje</strong><span>817-637-5804</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M22 6l-10 7L2 6"/></svg><div><strong data-i18n="en">Email</strong><strong data-i18n="es">Correo</strong><span>azurdiaroofing@gmail.com</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><strong data-i18n="en">Service area</strong><strong data-i18n="es">Área de servicio</strong><span data-i18n="en">Arlington, TX &amp; DFW area</span><span data-i18n="es">Arlington, TX y área de DFW</span></div></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg><div><strong data-i18n="en">Hours</strong><strong data-i18n="es">Horario</strong><span data-i18n="en">Mon – Sat, quotes by appointment</span><span data-i18n="es">Lun – Sáb, citas para cotización</span></div></li>
+        </ul>
+        <div class="social-row">
+          <a href="https://www.facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5H16l.5-3H13.5V8.2c0-.87.24-1.46 1.5-1.46H16.5V4.14C16.24 4.1 15.34 4 14.3 4c-2.17 0-3.66 1.32-3.66 3.75V10.5H8v3h2.64V21h2.86z"/></svg></a>
+          <a href="https://www.instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        </div>
+      </div>
+      <div class="contact-form reveal">
+        <h3><span data-i18n="en">Request your free quote</span><span data-i18n="es">Solicita tu cotización gratis</span></h3>
+        <p><span data-i18n="en">Fill out the form and our team will contact you shortly.</span><span data-i18n="es">Llena el formulario y nuestro equipo te contactará pronto.</span></p>
+        <form id="quoteForm" onsubmit="return handleSubmit(event)">
+          <div class="form-row">
+            <div class="field"><label><span data-i18n="en">Full name</span><span data-i18n="es">Nombre completo</span></label><input type="text" required placeholder="John Smith"></div>
+            <div class="field"><label><span data-i18n="en">Phone number</span><span data-i18n="es">Número de teléfono</span></label><input type="tel" required placeholder="(817) 000-0000"></div>
+          </div>
+          <div class="field"><label><span data-i18n="en">Email</span><span data-i18n="es">Correo electrónico</span></label><input type="email" required placeholder="you@email.com"></div>
+          <div class="field">
+            <label><span data-i18n="en">Type of roof / service</span><span data-i18n="es">Tipo de techo / servicio</span></label>
+            <select>
+              <option data-i18n="en">Standing Seam Metal</option><option data-i18n="es" selected>Metal Junta Alzada</option>
+              <option data-i18n="en">TPO Roofing</option><option data-i18n="es">Techo TPO</option>
+              <option data-i18n="en">Clay Tile / Roof Tiles</option><option data-i18n="es">Teja de Barro / Teja</option>
+              <option data-i18n="en">Shingle Roofing</option><option data-i18n="es">Techo de Shingles</option>
+              <option data-i18n="en">Not sure / General inquiry</option><option data-i18n="es">No estoy seguro / Consulta general</option>
+            </select>
+          </div>
+          <div class="field"><label><span data-i18n="en">Tell us about your project</span><span data-i18n="es">Cuéntanos sobre tu proyecto</span></label><textarea></textarea></div>
+          <div class="submit-row">
+            <button type="submit" class="btn btn-primary"><span data-i18n="en">Send request</span><span data-i18n="es">Enviar solicitud</span></button>
+            <span class="form-note"><span data-i18n="en">Or call us directly at 817-637-5804</span><span data-i18n="es">O llámanos directamente al 817-637-5804</span></span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container foot-grid">
+    <div class="foot-brand">
+      <img src="http://arqfra-ai.com/wp-content/uploads/2026/09/WhatsApp-Image-2026-09-06-at-6.48.52-PM-1.jpeg" alt="Azurdia Roofing logo">
+      <p><span data-i18n="en">Standing seam, TPO, tile and shingle roofing for Arlington, TX and the greater DFW area. Licensed, insured and BBB accredited.</span><span data-i18n="es">Techos de junta alzada, TPO, teja y shingles para Arlington, TX y el área de DFW. Con licencia, aseguranza y acreditación BBB.</span></p>
+    </div>
+    <div class="foot-col">
+      <h5 data-i18n="en">Services</h5><h5 data-i18n="es">Servicios</h5>
+      <ul>
+        <li><a href="#standing-seam" data-i18n="en">Standing Seam Metal</a><a href="#standing-seam" data-i18n="es">Metal Junta Alzada</a></li>
+        <li><a href="#tpo" data-i18n="en">TPO Roofing</a><a href="#tpo" data-i18n="es">Techo TPO</a></li>
+        <li><a href="#tile" data-i18n="en">Clay Tile Roofing</a><a href="#tile" data-i18n="es">Techo de Teja</a></li>
+        <li><a href="#shingles" data-i18n="en">Shingle Roofing</a><a href="#shingles" data-i18n="es">Techo de Shingles</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5 data-i18n="en">Company</h5><h5 data-i18n="es">Empresa</h5>
+      <ul>
+        <li><a href="#why" data-i18n="en">Why Us</a><a href="#why" data-i18n="es">Nosotros</a></li>
+        <li><a href="#gallery" data-i18n="en">Gallery</a><a href="#gallery" data-i18n="es">Galería</a></li>
+        <li><a href="#contact" data-i18n="en">Get a Quote</a><a href="#contact" data-i18n="es">Pedir Cotización</a></li>
+      </ul>
+    </div>
+    <div class="foot-col">
+      <h5 data-i18n="en">Contact</h5><h5 data-i18n="es">Contacto</h5>
+      <ul>
+        <li><a href="tel:+18176375804">817-637-5804</a></li>
+        <li><a href="mailto:azurdiaroofing@gmail.com">azurdiaroofing@gmail.com</a></li>
+        <li><span data-i18n="en">Arlington, TX 76010</span><span data-i18n="es">Arlington, TX 76010</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="container foot-bottom">
+    <span>© 2026 Azurdia Roofing &amp; Construction LLC. <span data-i18n="en">All rights reserved.</span><span data-i18n="es">Todos los derechos reservados.</span></span>
+    <span data-i18n="en">Licensed · Insured · BBB Accredited</span><span data-i18n="es">Con Licencia · Asegurados · Acreditados BBB</span>
+  </div>
+</footer>
+
+<div class="sticky-call">
+  <a href="tel:+18176375804">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+    <span data-i18n="en">Call now for a free quote</span><span data-i18n="es">Llama ahora por tu cotización gratis</span>
+  </a>
+</div>
+
+<script>
+  function setLang(lang){
+    document.documentElement.setAttribute('data-lang', lang);
+    document.documentElement.setAttribute('lang', lang);
+    document.getElementById('btn-en').classList.toggle('active', lang==='en');
+    document.getElementById('btn-es').classList.toggle('active', lang==='es');
+    document.querySelectorAll('select').forEach(function(sel){
+      var opts = sel.querySelectorAll('option[data-i18n="'+lang+'"]');
+      if(opts.length){ sel.value = opts[0].value; }
+    });
+    try{ localStorage.setItem('azurdia_lang', lang); }catch(e){}
+  }
+  (function(){
+    var saved = null;
+    try{ saved = localStorage.getItem('azurdia_lang'); }catch(e){}
+    if(!saved){ saved = 'en'; }
+    setLang(saved);
+  })();
+
+  // Hero background slider
+  (function(){
+    var slides = document.querySelectorAll('#heroBgSlider .hero-bg-slide');
+    if(slides.length < 2) return;
+    var current = 0;
+    setInterval(function(){
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 6000);
+  })();
+
+  function toggleMenu(){ document.getElementById('mobileMenu').classList.toggle('open'); }
+
+  function handleSubmit(e){
+    e.preventDefault();
+    var lang = document.documentElement.getAttribute('data-lang');
+    var msg = lang === 'es' ? 'Gracias, hemos recibido tu solicitud. Te contactaremos pronto.' : 'Thank you, we received your request. We will contact you shortly.';
+    alert(msg);
+    e.target.reset();
+    return false;
+  }
+
+  // Header shrink on scroll
+  var header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 40){ header.classList.add('scrolled'); } else { header.classList.remove('scrolled'); }
+  }, {passive:true});
+
+  // Scroll reveal
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduceMotion && 'IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){ entry.target.classList.add('in'); io.unobserve(entry.target); }
+      });
+    }, {threshold:0.15, rootMargin:'0px 0px -60px 0px'});
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(function(el){ io.observe(el); });
+  } else {
+    document.querySelectorAll('.reveal, .reveal-stagger').forEach(function(el){ el.classList.add('in'); });
+  }
+</script>
+
+</body>
+</html>
